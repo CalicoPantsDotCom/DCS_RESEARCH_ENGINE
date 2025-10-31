@@ -22,6 +22,26 @@ This is **Distributed Cognitive Synthesis as operational infrastructure** - the 
 
 ---
 
+## PRACTICAL APPLICATIONS
+
+**For demonstrations of these frameworks in action**, see the companion portfolio repository:
+
+👉 **[SYSTEMS_INVENTOR_WORKS](https://github.com/CalicoPantsDotCom/SYSTEMS_INVENTOR_WORKS)**
+
+The portfolio contains:
+- **Frameworks in Action:** DCS Protocol, K-E Metrics, and PCA applied to real-world analysis (athletic performance, comedy architecture, cultural phenomena)
+- **Cognitive Prosthetics:** Tools and systems demonstrating the frameworks in practice
+- **Community Ventures:** Framework applications to community building and organizational design
+
+**Relationship between repositories:**
+- **DCS_RESEARCH_ENGINE** (this repo) = Theoretical foundations, formal specifications, empirical validation
+- **SYSTEMS_INVENTOR_WORKS** (portfolio) = Practical applications, case studies, demonstrations
+
+If you're looking for **citeable research and formal specifications**, you're in the right place.
+If you're looking for **practical examples and applications**, visit the portfolio.
+
+---
+
 ## FRAMEWORKS UNDER DEVELOPMENT
 
 ### 1. **DCS Protocol (Distributed Cognitive Synthesis)**
@@ -37,16 +57,31 @@ This is **Distributed Cognitive Synthesis as operational infrastructure** - the 
 
 **Location:** `frameworks/DCS-Protocol/`
 
-### 2. **K-E Metrics (Knowledge Diffusion × Institutional Elasticity)**
-**Status:** Framework complete, empirical validation pending
-**Description:** System health diagnostic measuring:
-- **K (Knowledge Diffusion):** Rate of pattern recognition and cross-domain integration
-- **E (Institutional Elasticity):** Structural adaptability and recovery capacity
-- **H (Health):** H = K × E (multiplicative, both necessary)
+### 2. **K-E Metrics (Knowledge × Elasticity × Use Case Alignment)**
+**Status:** v2.0 framework complete (Oct 2025), empirical validation in progress
+**Description:** System health diagnostic with three necessary dimensions:
+- **K (Knowledge Diffusion):** Pattern recognition, cross-domain integration, **boundary permeability** (B_in)
+  - Distinguishes primary gaps (solution doesn't exist) from secondary gaps (institutional blindness)
+- **E (Institutional Elasticity):** Multi-layer adaptability across ALL barriers
+  - E_formal (regulatory), E_economic (incentives), E_social (trust/culture), B_out (transparency)
+  - **Critical: "Low formal barriers don't guarantee adoption when informal barriers dominate"**
+- **U (Use Case Alignment):** Contextual fit of solution to problem
+  - Fidelity match, operational compatibility, marginal value vs switching cost
+  - **Explains "technically excellent but practically useless" failures**
+- **H (Health):** H = K × E × U (all three necessary)
 
 **Application Scales:** Individual productivity → Organizational adaptability → Civilizational resilience
 
-**Key Claim:** Systems fail when either K or E drops to zero, regardless of the other's strength.
+**Key Claims:**
+- Systems fail when K, E, OR U drops to zero (any single dimension approaching zero crashes health)
+- Multi-layer elasticity: deregulation (E_formal) insufficient when E_economic/E_social block change
+- Reinforcement traps: negative feedback spirals between E layers create lock-in
+
+**Empirical Case Studies:**
+- Google Flu Trends: High K, moderate E, catastrophically low U → H=0.001 (complete failure despite technical excellence)
+- Embalming solutions: High E_formal, low E_economic/E_social → H=0.0015 (adoption failure despite deregulation)
+
+**v1.0 → v2.0 Evolution:** Expanded from K×E to K×E×U based on real-world failures v1.0 couldn't explain
 
 **Location:** `frameworks/K-E-Metrics/`
 
@@ -308,7 +343,7 @@ All projects tracked through six-stage model:
 | Framework | Need | Concept | WoZ | MVP | Instrumented | Refinement |
 |-----------|------|---------|-----|-----|--------------|------------|
 | DCS Protocol | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
-| K-E Metrics | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
+| K-E Metrics v2.0 | ✅ | ✅ | ✅ | ⏳ | ⏳ | ⏳ |
 | TIS/CEI | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
 | PCA | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
 | ScFOIF | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
@@ -322,13 +357,17 @@ All projects tracked through six-stage model:
 
 ## CURRENT STATUS SNAPSHOT
 
-**Date:** 2025-10-30
-**Phase:** Infrastructure + Initial Literature Acquisition
-**Active Frameworks:** DCS Protocol (operational), K-E Metrics (framework complete), TIS/CEI (protocols in development)
-**Next Milestone:** 10 Big Data failure papers analyzed, first synthesis document generated
+**Date:** 2025-10-31
+**Phase:** Framework Documentation + Empirical Validation Design
+**Active Frameworks:** DCS Protocol (operational), K-E Metrics v2.0 (complete), TIS/CEI (protocols in development), PCA (case study phase)
+**Recent Milestones:**
+- ✅ K-E Metrics v2.0 complete (H = K × E × U, multi-layer elasticity, boundary permeability)
+- ✅ Week 1 Core Docs complete (mathematical-formulation, specification, GLOSSARY, README)
+- ✅ Cross-repository link established (SYSTEMS_INVENTOR_WORKS portfolio)
+**Next Milestone:** Week 2 case studies (GFT deep-dive, embalming deep-dive) + H4-H7 hypotheses documentation
 **LLMs Coordinated:** Claude (orchestrator active), GPT (ready for literature screening), DeepSeek (ready for technical validation), Copilot (ready for tool generation)
 
-**Git Health:** ✅ Structure initialized, ✅ Documentation complete, ⏳ First literature commit pending
+**Git Health:** ✅ Structure initialized, ✅ Documentation complete, ✅ K-E v2.0 integrated, ⏳ Case study documentation pending
 
 ---
 
@@ -362,4 +401,4 @@ We're living inside the frameworks while building the frameworks. That's the str
 
 ---
 
-*This README is a living document. Last updated: 2025-10-30*
+*This README is a living document. Last updated: 2025-10-31*
