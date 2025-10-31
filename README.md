@@ -37,16 +37,31 @@ This is **Distributed Cognitive Synthesis as operational infrastructure** - the 
 
 **Location:** `frameworks/DCS-Protocol/`
 
-### 2. **K-E Metrics (Knowledge Diffusion × Institutional Elasticity)**
-**Status:** Framework complete, empirical validation pending
-**Description:** System health diagnostic measuring:
-- **K (Knowledge Diffusion):** Rate of pattern recognition and cross-domain integration
-- **E (Institutional Elasticity):** Structural adaptability and recovery capacity
-- **H (Health):** H = K × E (multiplicative, both necessary)
+### 2. **K-E Metrics (Knowledge × Elasticity × Use Case Alignment)**
+**Status:** v2.0 framework complete (Oct 2025), empirical validation in progress
+**Description:** System health diagnostic with three necessary dimensions:
+- **K (Knowledge Diffusion):** Pattern recognition, cross-domain integration, **boundary permeability** (B_in)
+  - Distinguishes primary gaps (solution doesn't exist) from secondary gaps (institutional blindness)
+- **E (Institutional Elasticity):** Multi-layer adaptability across ALL barriers
+  - E_formal (regulatory), E_economic (incentives), E_social (trust/culture), B_out (transparency)
+  - **Critical: "Low formal barriers don't guarantee adoption when informal barriers dominate"**
+- **U (Use Case Alignment):** Contextual fit of solution to problem
+  - Fidelity match, operational compatibility, marginal value vs switching cost
+  - **Explains "technically excellent but practically useless" failures**
+- **H (Health):** H = K × E × U (all three necessary)
 
 **Application Scales:** Individual productivity → Organizational adaptability → Civilizational resilience
 
-**Key Claim:** Systems fail when either K or E drops to zero, regardless of the other's strength.
+**Key Claims:**
+- Systems fail when K, E, OR U drops to zero (any single dimension approaching zero crashes health)
+- Multi-layer elasticity: deregulation (E_formal) insufficient when E_economic/E_social block change
+- Reinforcement traps: negative feedback spirals between E layers create lock-in
+
+**Empirical Case Studies:**
+- Google Flu Trends: High K, moderate E, catastrophically low U → H=0.001 (complete failure despite technical excellence)
+- Embalming solutions: High E_formal, low E_economic/E_social → H=0.0015 (adoption failure despite deregulation)
+
+**v1.0 → v2.0 Evolution:** Expanded from K×E to K×E×U based on real-world failures v1.0 couldn't explain
 
 **Location:** `frameworks/K-E-Metrics/`
 
@@ -308,7 +323,7 @@ All projects tracked through six-stage model:
 | Framework | Need | Concept | WoZ | MVP | Instrumented | Refinement |
 |-----------|------|---------|-----|-----|--------------|------------|
 | DCS Protocol | ✅ | ✅ | ✅ | ✅ | ⏳ | ⏳ |
-| K-E Metrics | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
+| K-E Metrics v2.0 | ✅ | ✅ | ✅ | ⏳ | ⏳ | ⏳ |
 | TIS/CEI | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
 | PCA | ✅ | ✅ | ⏳ | ⏳ | ⏳ | ⏳ |
 | ScFOIF | ✅ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |

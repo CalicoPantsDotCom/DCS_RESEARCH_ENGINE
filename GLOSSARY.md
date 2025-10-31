@@ -116,25 +116,221 @@ The temporal span an organism can hold in "felt present" - roughly 3 seconds for
 
 ---
 
-### K-E Metrics (Knowledge Diffusion × Institutional Elasticity)
+### K-E Metrics (Knowledge Diffusion × Institutional Elasticity × Use Case Alignment)
 **Origin:** Systems health diagnostic framework
+**Version:** 2.0 (expanded October 2025)
+
+**Health (H):** H = K × E × U (all three necessary)
 
 **Knowledge Diffusion (K):** Rate at which patterns are recognized, integrated, and applied across domains
+- Components: K₁ (Recognition), K₂ (Integration), K₃ (Application), K₄ (Diffusion), C(S) (Coherence), **B_in** (Boundary Permeability Inward)
+- **v2.0 addition:** Distinguishes primary gaps (solution doesn't exist) from secondary gaps (solution exists but invisible due to institutional separation)
 
-**Institutional Elasticity (E):** System's ability to adapt structure, recover from failure, incorporate feedback
+**Institutional Elasticity (E):** System's ability to adapt structure across multiple barriers
+- **v2.0 MAJOR REFINEMENT:** Multi-layered structure
+  - **E_formal:** Regulatory/legal barriers
+  - **E_economic:** Economic incentives, ROI, switching costs
+  - **E_social:** Trust, status threats, cultural compatibility
+  - **B_out:** Outbound boundary permeability (transparency, bidirectional dialogue)
+- **E = E_formal × E_economic × E_social × B_out** (ALL layers must permit change)
+- **Critical insight:** "Low formal barriers don't guarantee adoption when informal social and economic barriers dominate"
 
-**Health (H):** H = K × E (multiplicative because both are necessary)
+**Use Case Alignment (U):** NEW in v2.0
+- **Definition:** Whether solution characteristics match context requirements
+- **Formula:** U = F_fidelity × C_context × (V_marginal / C_switching)
+- **Components:**
+  - F_fidelity: Accuracy/precision match to context needs
+  - C_context: Operational compatibility with constraints
+  - V_marginal / C_switching: Improvement over alternatives vs switching cost
+- **Key insight:** Technical superiority ≠ contextual appropriateness
 
 **Application Scales:**
 - Individual: Personal productivity and learning
 - Organizational: Company adaptability
 - Civilizational: Society's ability to respond to crises
 
-**Why Multiplicative:** High K with low E = knowledge that can't be implemented. High E with low K = adaptability without insight. Need both.
+**Why Multiplicative (v2.0):** High K and E with low U still causes failure. Example: Google Flu Trends had high K (excellent data science), moderate E (could update), but catastrophically low U (real-time ≠ reliable for public health context) → H = 0.001, complete failure.
 
-**Example:** "The Bronze Age collapse had low E (rigid palace systems) despite high K (sophisticated navigation). H crashed when stress hit."
+**v1.0 → v2.0 Evolution:**
+- v1.0 explained failures from knowledge or adaptability deficits
+- v2.0 explains "technically excellent but practically useless" failures and hidden institutional barriers
+- Empirically motivated by Google Flu Trends and embalming solution adoption failures
+
+**Example Applications:**
+- Bronze Age collapse: High K, low E (rigid institutions) → failure
+- Google Flu Trends: High K, moderate E, catastrophically low U → failure despite technical excellence
+- Embalming solutions: High E_formal (deregulated) but low E_economic and E_social → adoption failure
 
 **Location:** `frameworks/K-E-Metrics/mathematical-formulation.md`
+
+---
+
+### Boundary Permeability (B_in and B_out)
+**Origin:** K-E Metrics v2.0
+**Status:** NEW in October 2025
+
+**Definition:** Ability to recognize and share knowledge across institutional boundaries.
+
+**B_in (Inbound Boundary Permeability):**
+- Can we see knowledge that exists in adjacent institutional domains?
+- Range: [0, 1]
+- 0 = Complete institutional blindness (secondary knowledge gaps)
+- 1 = Perfect awareness of solutions in other domains
+- **Example:** Google Flu Trends had low B_in (engineers couldn't see epidemiological ground truth limitations)
+
+**B_out (Outbound Boundary Permeability):**
+- Can others see our knowledge and provide feedback?
+- Measures transparency, bidirectional dialogue, vs proprietary black boxes
+- Range: [0, 1]
+- 0 = One-way extraction, complete secrecy, no feedback possible
+- 1 = Fully transparent, bidirectional dialogue, collaborative
+- **Example:** GFT had low B_out (proprietary algorithm, no transparency for epidemiologists)
+
+**Relationship:**
+- **B_in + Low B_out = Parasitic extraction** (take knowledge, don't share methods)
+- **Low B_in + B_out = Broadcasting into void** (sharing but not learning from others)
+- **Both needed** for healthy knowledge ecosystems
+
+**Critical Insight:** "Automation without boundary permeability creates institutional separation that data volume cannot overcome."
+
+**Location:** K component includes B_in, E component includes B_out
+
+---
+
+### Primary Knowledge Gap
+**Origin:** K-E Metrics v2.0
+**Status:** NEW distinction in October 2025
+
+**Definition:** Solution or pattern genuinely doesn't exist yet. Requires innovation, discovery, or creation.
+
+**Examples:**
+- No treatment exists for novel disease
+- No framework exists for newly discovered phenomenon
+- No technology exists to solve problem
+
+**Response:** Innovation required. Invest in R&D, exploration, theory development.
+
+**Contrast with:** Secondary Knowledge Gap (solution exists, just invisible due to institutional separation)
+
+---
+
+### Secondary Knowledge Gap
+**Origin:** K-E Metrics v2.0
+**Status:** NEW distinction in October 2025
+
+**Definition:** Solution or pattern exists but system can't see it due to institutional separation, professional boundaries, or proprietary barriers.
+
+**Causes:**
+- Institutional separation (different professional domains)
+- Proprietary barriers (trade secrets, black boxes)
+- Professional silos (academics vs practitioners)
+- Low boundary permeability (B_in)
+
+**Examples:**
+- Embalming solutions exist in funeral industry but invisible to death care professionals
+- GFT engineers unaware of epidemiological constraints that CDC knew well
+- Medical solutions exist in veterinary medicine but not recognized by human medicine
+
+**Response:** Improve boundary permeability, create cross-institutional dialogue, NOT redundant innovation.
+
+**Critical Mistake:** Treating secondary gaps as primary gaps wastes resources on reinventing wheels.
+
+**Measurement:** Low B_in (inbound boundary permeability) indicates secondary gaps
+
+---
+
+### Reinforcement Trap
+**Origin:** K-E Metrics v2.0
+**Status:** NEW in October 2025
+
+**Definition:** Negative feedback spiral where low institutional elasticity components reinforce each other, creating lock-in even when formal barriers are low.
+
+**Mechanism:**
+```
+Low E_social → Low trust → Low E_economic (switching cost perceived as higher)
+      ↓
+Low E_economic → Can't justify change → Freezes system → Low B_out (no feedback)
+      ↓
+Low B_out → No adaptation → System deteriorates → Further lowers E_social
+      ↓
+   [Cycle repeats, driving E → 0]
+```
+
+**Examples:**
+- **Google Flu Trends:** Economic pressure to justify project → couldn't admit failures → froze model → predictions degraded → distrust increased → abandonment
+- **Embalming solutions:** Low economic incentive → funeral homes don't try → no learning → perceived cost stays high → economic barrier persists
+
+**Breaking the Trap:**
+- Requires **simultaneous intervention** on multiple E layers
+- Single-layer intervention (e.g., just economic incentives) fails when trap is active
+- Once E_social × E_economic < 0.2, trap activation likely
+
+**Why It Matters:** Systems can get trapped in low-E states even when solutions exist and formal barriers are low.
+
+**Hypothesis:** ~50% of organizational change initiatives enter reinforcement traps
+
+---
+
+### Use Case Alignment (U)
+**Origin:** K-E Metrics v2.0
+**Status:** NEW dimension in October 2025
+
+**Definition:** Degree to which solution's characteristics match the requirements of the specific context where it will be applied.
+
+**Formula:** U = F_fidelity × C_context × (V_marginal / C_switching)
+
+**Components:**
+- **F_fidelity:** Do solution's accuracy/precision characteristics match context needs?
+  - GFT: Real-time but unreliable ≠ reliable (what public health needs)
+  - Range: [0, 1]
+- **C_context:** Does solution fit operational constraints?
+  - GFT: Automated black box ≠ explainable (what epidemiologists need for intervention)
+  - Range: [0, 1]
+- **V_marginal / C_switching:** Improvement over alternatives vs switching cost
+  - Embalming: Marginal benefit (better for 10-30% of cases) doesn't justify equipment cost
+  - "Good enough" blocking: Adequate alternatives block superior solutions
+
+**Key Insight:** Technical superiority ≠ contextual appropriateness. Same solution in different contexts has different value.
+
+**Why It Matters:** Explains "technically excellent but practically useless" failures that v1.0 K-E couldn't predict.
+
+**Example Misalignments:**
+- GFT: U ≈ 0.05 (real-time ≠ valuable when unreliable; automated ≠ valuable when unexplainable)
+- Google Glass: U ≈ 0.1 (constant recording ≠ socially acceptable; expensive ≠ justified by marginal utility)
+- iPhone (success): U ≈ 0.9 (touchscreen matched mobile computing need; apps matched varied contexts)
+
+**Location:** Third dimension of K-E-U framework, measured independently
+
+---
+
+### Multi-Layer Institutional Elasticity
+**Origin:** K-E Metrics v2.0
+**Status:** NEW decomposition in October 2025
+
+**Definition:** Institutional Elasticity (E) is not a single dimension but comprises multiple barrier layers that ALL must permit change.
+
+**Four Layers:**
+1. **E_formal:** Regulatory, legal, credentialing barriers
+2. **E_economic:** Economic incentives, ROI, switching costs, lock-in effects
+3. **E_social:** Trust, status threats, cultural compatibility
+4. **B_out:** Outbound boundary permeability (transparency, feedback mechanisms)
+
+**Formula:** E = E_formal × E_economic × E_social × B_out
+
+**Why Multiplicative:** ANY single layer approaching zero crashes total E. Cannot compensate high E_formal with high E_economic if E_social = 0.
+
+**Critical Discovery:** "Low formal barriers don't guarantee adoption when informal social and economic barriers dominate."
+
+**Example - Embalming Solutions:**
+- E_formal = 0.9 (no regulation, deregulated)
+- E_economic = 0.2 (upfront costs, delayed ROI)
+- E_social = 0.15 (status threat to professional skill)
+- B_out = 0.5 (vendors try to share)
+- **Total E = 0.014** (catastrophic despite high E_formal)
+
+**Implication:** Policy focusing only on deregulation (E_formal) misses dominant barriers in E_economic and E_social layers.
+
+**Hypothesis:** ~30% of cases have high E_formal (>0.7) but low total E (<0.3)
 
 ---
 
@@ -645,7 +841,7 @@ This glossary is a **living document** that evolves as:
 
 **Review Schedule:** Weekly during active development, monthly during refinement
 
-**Current Term Count:** 50+ defined
+**Current Term Count:** 56+ defined (6 new v2.0 K-E terms added Oct 2025)
 **Target Mature State:** 100-200 terms
 
 ---
@@ -664,5 +860,5 @@ This glossary is a **living document** that evolves as:
 
 *You now have a map of your own conceptual territory. Sometimes you need external memory to see the whole structure.*
 
-**Last Updated:** 2025-10-30
-**Next Review:** 2025-11-06
+**Last Updated:** 2025-10-31 (K-E v2.0 terms added)
+**Next Review:** 2025-11-07
